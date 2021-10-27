@@ -1,0 +1,90 @@
+    #div1{
+        width: auto;
+        height: auto;
+        background-color: #232F3E;
+        font-size: 50px;
+        font-variant: small-caps;
+        font-family: 'Times New Roman';
+        transition-duration: 1.3s;
+        color: orange;
+    }
+    #div1:hover{
+        transition-duration: 1.3s;
+        color: #232F3E;
+        background-color:greenyellow;
+        border-top-left-radius: 5cm;
+        border-bottom-right-radius:5cm;
+    }
+    body{
+        opacity: 0;
+        transition: opacity 5s;
+    }
+    .menu{
+        background-color: springgreen;
+        color: black;
+        width: auto;
+        transition-duration: 1s;
+        font-size: 20px;
+        font-family: 'Times New Roman';
+        text-decoration: underline;
+    }
+    .menu:hover{
+        border-radius: 10cm;
+        transition-duration: 1s;
+        background-color:white;
+        color: black;
+    }
+    #but{
+        background-color: gold;
+        border: 0;
+    }
+    #but:hover{
+        background-color: springgreen;
+        border: 0;
+    }
+    .but1{
+        background-color:yellowgreen;
+        border: 0;
+    }
+    .but1:hover{
+        background-color: springgreen;
+        border: 0;
+    }
+    body{
+        background-image: url(bg-img.jpg);
+        background-repeat: no-repeat;
+        background-size: 40.2cm;
+        background-color: #232F3E;
+    }
+    li > a{
+        font-size: 25px;
+        color: #232F3E;
+        font-weight: bolder;
+    }
+    li{
+        list-style-type: none;
+    }
+    li > a:hover{
+        color: black;
+        font-size: 25px;
+        background-color: palegreen;
+        transition-duration: 1s;
+    }
+    #menuBut{
+        font-family: 'Times New Roman';
+        transition-duration: 1s;
+        background-color: white;
+        height: auto;
+        margin-top: 20px;
+    }
+    #menuBut:hover{
+        background-color: palegoldenrod;
+        border-radius: 50px;
+        transition-duration: 1s;
+        height: auto;
+    }
+    #devs{
+        background-color: white;
+        color: black;
+        width: fit-content;
+    }

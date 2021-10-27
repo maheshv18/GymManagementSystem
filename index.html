@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="login.js"></script>
+    </head>
+    <style>
+        .heading{
+            color: orange;
+            font-variant: small-caps;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        #form1{
+            height: 7cm;
+            width: 10cm;
+            color: white;
+            transition-duration: 1s;
+            font-size: 0.5cm;
+            font-family: Times New Roman;
+        }
+        #form1:hover{
+            transition-duration: 1s;
+            background-color: greenyellow;   
+            color: black;
+            border-top-left-radius: 2cm;
+            border-top-right-radius: 2cm;
+        }
+        #form2{
+            height: 5cm;
+            width: 10cm;
+            color: white;
+            transition-duration: 1s;
+            font-size: 0.5cm;
+            font-family: Times New Roman;
+        }
+        #form2:hover{
+            transition-duration: 1s;
+            background-color: greenyellow;   
+            color: black;
+            border-bottom-left-radius: 2cm;
+            border-bottom-right-radius: 2cm;
+        }
+    </style>
+    <body style="background-color: #232F3E;">
+        
+        <center>
+            <div class="heading">GetFit<a style="color: white;text-decoration: underline;"> Login Zona</a></div>
+        </center>
+        
+        <br><br><br><br><br>
+        
+        <center>
+            <div id="form1" class="container">
+            <div class="form-group">
+                <h2 style="text-decoration: underline;">Registered User:</h2>
+                <label>Name:</label>
+                <input id="name" type="text" class="form-control" placeholder="Enter Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input id="pass" type="password" class="form-control" placeholder="Enter The Password" required>
+              </div>
+              <button onclick="web()" class="btn btn-primary">Submit</button>
+            </div>
+        </center>
+        <br><br>
+        <center>
+            <div id="form2" class="container">
+            <div class="form-group">
+                <h2 style="text-decoration: underline;">Not A Register User??</h2>
+                <label>Name:</label>
+                <input id="name1" type="text" class="form-control" placeholder="Enter Your Name">
+              </div>
+              <button onclick="web()" class="btn btn-primary">Submit</button>
+            </div>
+        </center>
+    </body>
+</html>

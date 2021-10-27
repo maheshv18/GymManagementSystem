@@ -1,0 +1,20 @@
+.style{
+font-family: 'Courier New', Courier, monospace;
+color: white;
+font-size: 20px;
+margin-left: 20px;
+}
+#head:hover{
+    color:yellowgreen;
+    background-color: cornsilk;
+}
+.sub:hover{
+    color:blueviolet;
+}
+.precautions
+{
+    color:blue;
+}
+hr{
+    background-color: red;
+}

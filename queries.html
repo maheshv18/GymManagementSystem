@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+body{
+    margin: 0%;
+    padding: 0%;
+    background: rgba(0, 0, 0, 0.9);
+    background-image: url(query.jpg);
+    background-size: cover;
+    }
+.form{
+   background-color: white;
+    width: 85%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding:30px 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20 #000000b3;
+    font-family: sans-serif;
+}
+.form h1{
+    margin-top: 0%;
+}
+.txtb{
+    border: 1px solid grey;
+    padding: 8px 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.txtb label{
+    display: block;
+    font-size: 13px;
+    text-align: left;
+    color: darkgrey;
+    text-transform: uppercase;
+}
+.txtb input , .txtb textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.form .submit input[type="submit"]{
+    width: 80%;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.txtb #dob ::placeholder{
+    color: grey;
+}
+.top{
+    font-family: monospace;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.top #no1{
+    text-indent: 10px;
+    line-height: 0px;
+}
+.top #no2{
+    text-indent: 60px;
+}
+table{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+.form .follow a{
+    font-size: 25px;
+}
+.form .follow .face{
+    color:blue;
+}
+.form .follow .insta{
+    color:orange;
+}
+.form .follow .twitter{
+    color:skyblue;
+}
+.form .follow .youtube{
+    color:red;
+}
+</style>
+<script src="java.js"></script>       
+        <div class="top">
+            <p id="no1"> no pain </p><p id="no2"> no gain</p>
+         </div>
+    </head>
+    <body>
+        
+        <div class="form"> 
+            <h1>Write Them Here</h1>
+            <form onsubmit="return validate()" action="display.html">
+                <div class="txtb">
+                    <label>Name :</label> <input type="text" placeholder="Full name" id="name" required>            
+                </div>
+                <div class="txtb">
+                    <label>Date of birth :</label> <input type="date" placeholder="D.O.B" id="dob" required>            
+                </div>
+                <div class="txtb">
+                    <label>Email :</label> <input type="text" placeholder="Email ID" id="email" required>            
+                </div>
+                <div class="txtb">
+                    <label>Phone no :</label> <input type="text" placeholder="Mobile no" id="phone" required>            
+                </div>
+                <div class="txtb">
+                    <label>Message :</label><textarea cols="30" placeholder="Your message" id="tarea" required></textarea>      
+                </div>
+                <div class="submit">
+                   <input type="submit" value="send">
+                </div>
+                <hr>
+            </form>
+                <div class="follow">
+                    Follow us on
+                <table>
+                    <tr>
+                        <td><a href="http://www.facebook.com/" class="face"><i class="fa fa-facebook-f"></i></a></td>                       
+                        <td><a href="https://www.instagram.com/" class="insta"><i class="fa fa-instagram"></i></a></td> 
+                        <td><a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a></td>
+                        <td><a href="http://www.twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></td>                            
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td>Instagram</td>
+                        <td>Youtube</td>
+                        <td>Twitter</td>
+                    </tr>
+                
+                </table>
+                </div>
+       
+        </div>        
+    </body>
+</html>

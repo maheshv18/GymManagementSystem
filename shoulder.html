@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>
+            Shoulder Exercises
+        </title>
+    </head>
+    <style>
+        #div1{
+            width: 475;
+            height: 150;
+            background-color: rgb(56, 31, 85);
+            font-size: 50px;
+            font-variant: small-caps;
+            font-family: 'Times New Roman';
+            transition-duration: 1.3s;
+            color: rgb(209, 230, 231);
+            
+        }
+        #div2{
+            width: 475;
+            height: 340;
+            background-color: rgb(247, 211, 131);
+            font-size: 20px;
+            font-variant: small-caps;
+            font-family: 'Times New Roman';
+            transition-duration: 1.3s;
+            color: rgb(209, 230, 231);
+            float: left;
+            border: 1px solid grey;
+            padding: 8px 10px;
+            margin: 10px;
+            border-radius: 10px;
+            position: relative;
+            left: 5.8cm;
+        }
+
+
+        #div3{
+            width: 200;
+            height: 160;
+            background-color: rgb(143, 67, 6);
+            font-size: 20px;
+            font-variant: small-caps;
+            font-family: 'Times New Roman';
+            transition-duration: 1.3s;
+            color: rgb(209, 230, 231);
+            float: left;            
+            border: 1px solid rgb(87, 84, 84);
+            margin: 1.3cm;
+            border-radius: 10px;   
+            position: relative;
+            left: 6.5cm;
+            top: 2.6cm;
+        }
+        #div3 > h5{
+            position: relative;
+            top: -0.6cm;
+            margin-left: 10px;
+        }
+        
+        #div1:hover{
+            transition-duration: 1.3s;
+            color: rgb(202, 208, 214);
+            background-color:rgb(108, 73, 109);
+            border-top-left-radius: 2cm;
+            border-top-right-radius: 2cm;
+            border-bottom-left-radius: 2cm;
+            border-bottom-right-radius:2cm;
+        }
+
+        .form{
+   background-color: white;
+    width:4cm;
+   height: 2cm;
+    
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-100%,-100%);
+    padding:1px 1px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+    font-family: sans-serif;
+}
+        #bg {
+  
+  background-repeat: no-repeat;
+  background-size: 42cm;
+}
+.submit input[type="submit"]{
+    width: 20%;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    position: relative;
+    left: 2.5cm;
+}
+.submit input[type="reset"]{
+    width: 20%;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    position: relative;
+    left: 2.8cm;
+}
+body{
+      opacity: 0;
+      transition: opacity 5s;
+}
+    </style>
+    <body onload="document.body.style.opacity = '10'" id="bg" background="https://images2.alphacoders.com/692/thumb-1920-692040.jpg">
+  <marquee> <div align="center" id="div1"  >
+         <h4>Shoulder Exercises</h4>
+        </div></marquee>
+     <br><br><br><br><br>
+     <div id="div3"><h5 style="font-size: 1cm;height: 1cm;color: rgba(248, 220, 169, 0.877);">ENTER DETAILS</h3></div>
+ <br><br>
+  <div id="div2" >  <form name="RegForm" action="shoulder2.html" onsubmit="return validation()">  
+   
+        <p style="color:rgb(122, 84, 0);">Name: <input type="text" size=35 name="Name" required> </p>        
+        <p style="color:rgb(122, 84, 0);" > Address: <textarea cols="55" name="Address" required></textarea>  </p> 
+        <p style="color:rgb(122, 84, 0);">E-mail Address: <input type="email" size=35 name="EMail">  </p> 
+       
+        <p style="color:rgb(122, 84, 0);">Telephone: <input type="text" size=35 name="Telephone"> </p>   
+              
+        <p style="color:rgb(122, 84, 0);">Select Your Choices:  
+            <select type="text" value="" name="Subject"> 
+                <option>Barbell Overhead Shoulder Press. </option> 
+                <option>Seated Dumbbell Shoulder Press.</option> 
+                <option>Front Raise.</option> 
+                <option>Reverse Pec Deck Fly.</option> 
+                <option>Bent-Over Dumbbell Lateral Raise.</option>
+                <option>Dumbbell Lateral Raise</option> 
+            </select></p>
+        <p style="color:rgb(122, 84, 0);">Comments:  <textarea cols="55" name="Comment">  </textarea></p> 
+         <br><div class="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="send">  
+                <input type="reset" value="reset" name="reset">
+               
+         </div>   
+          
+                 
+    </form> 
+      </p></div>
+  
+
+     
+    </body>
+</html>
+
+
+
+<script> 
+    function validation()                                    
+    { 
+        var name = document.forms["RegForm"]["Name"];               
+        var email = document.forms["RegForm"]["EMail"];    
+        var phone = document.forms["RegForm"]["Telephone"];  
+        var what =  document.forms["RegForm"]["Subject"];  
+        var password = document.forms["RegForm"]["Password"];  
+        var address = document.forms["RegForm"]["Address"];  
+       
+        if (name.value == "")                                  
+        { 
+            window.alert("Please enter your name."); 
+            name.focus(); 
+            return false; 
+        } 
+       
+        if (address.value == "")                               
+        { 
+            window.alert("Please enter your address."); 
+            address.focus(); 
+            return false; 
+        } 
+           
+        if (email.value == "")                                   
+        { 
+            window.alert("Please enter a valid e-mail address."); 
+            email.focus(); 
+            return false; 
+        } 
+       
+        if (phone.value == "")                           
+        { 
+            window.alert("Please enter your telephone number."); 
+            phone.focus(); 
+            return false; 
+        } 
+       
+        if (password.value == "")                        
+        { 
+            window.alert("Please enter your password"); 
+            password.focus(); 
+            return false; 
+        } 
+       
+        if (what.selectedIndex < 1)                  
+        { 
+            alert("Please enter your course."); 
+            what.focus(); 
+            return false; 
+        } 
+       
+        return true; 
+    }</script> 
+    

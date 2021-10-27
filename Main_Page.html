@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="login.js"></script>
+        <link rel="stylesheet" href="mainPage.css">
+    </head>
+    <body onload="document.body.style.opacity = '10'">
+
+        <div align="center" id="div1"> GetFit<div style="position: relative;top: -10px;background-color: greenyellow;" class="spinner-grow text-warning"></div><br>
+            <p style="font-size: 20px;text-transform: capitalize;">A place where you find professional GYM trainers</p>
+            <center>
+            <marquee style="font-size: 15px;">
+                <p>Main Branch Address: <p>Road No: 34, GetFit Plaza <p>Bangalore</p>
+            </marquee>
+        </div>
+        <center>
+            <div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" style="background-color: #232F3E;">Click Here To Display The Menu</button>
+                <div class="container" id="menuBut">
+                    <ul id="demo" class="collapse">
+                        <li style="text-decoration: underline;font-size: 25px;">Types Of Exercises:</li>
+                        <li><a target="_blank" href="abs.html">Abs For Exercise</a></li>
+                        <li><a href="shoulder.html" target="_blank">Exercise For Shoulders</a></li>
+                        <li><a href="proj.html" target="_blank">Exercises Using Triceps</a></li>
+                        <li><a href="dheeru.html" target="_blank">Exercises Using Dumbbells</a></li>
+                        <li style="text-decoration: underline;font-size: 25px;">Info. Of Us:</li>
+                        <li><a target="_blank" href="aboutus.html">About Us</a></li>
+                        <li><a href="#devs">About The Developers</a></li>
+                        <li><a href="queries.html" target="_blank">Want To Write Your Queries To Us??</a></li>
+                    </ul>
+                </div>
+            </div>
+        </center>
+
+        <hr style="background-color: orange;">                
+       <center><p style="color: white;background-color: black;font-family: Times New Roman;font-size: 20px;text-decoration: underline;font-weight: bolder;width: fit-content;">Interior Look Of Our GYM</p><div style="position: relative;top: -45px;left: 130px;background-color: black;" class="spinner-grow text-warning"></div></center>    
+       <center>
+            <img class="container img-responsive" id="pictures" src="https://static.wixstatic.com/media/dab544_006fa84dda6a46b69205ba8fad941f25~mv2_d_3153_1836_s_2.jpg">
+            <img class="container img-responsive" id="pictures" src="https://ansainteriors.com/wp-content/uploads/2019/01/5-10-1024x576.jpg">
+            <img class="container img-responsive" id="pictures" src="https://4.imimg.com/data4/RC/TQ/MY-21782068/gym-interior-design-services-500x500.jpg">
+            <img class="container img-responsive" id="pictures" src="https://5.imimg.com/data5/OY/PK/MY-6826615/gym-interior-designing-service-500x500.png">
+            <button id="but" onclick="myShow.previous()">Previous Image</button>
+            <button class="but1" onclick="myShow.next()">Next Image</button>
+       </center>
+       <br><br><br><br>
+        <center>
+            <div style="margin-top: 2cm;">
+                <h2 style="color: palegoldenrod;text-decoration: underline;font-family: Times New Roman;">Warm-up Moves:</h2>
+                <img class="container img-responsive" src="https://i.pinimg.com/originals/89/6f/6f/896f6fd99477d199227d2e32484e5167.gif" height="500">
+            </div>
+            </center>
+            <br>
+            <center>
+                <div id="devs">
+                    <h2 style="text-decoration: underline;">This Website Has Been Developed By: </h2>
+                    <hr>
+                    <ul>
+                        <li>Ajay B</li>
+                        <li>Balaram K</li>
+                        <li>Dheeraj Manjunadha K</li>
+                        <li>Mahesh V</li>
+                        <li>Kailash M</li>
+                        <li>Kaleem Sk</li>
+                    </ul><hr>
+                    <p>Batch Of 2019-23 From Amrita Vishwa Vidyapeetam, Coimbatore.</p>
+                </div>
+            </center>
+        <div style="background-color: black;height: 5cm;width: auto;">
+        <center>
+            <!-- freecounterstat Code STARTS -->
+            <h3 style="text-decoration: underline;color: palegoldenrod;font-family: Times New Roman;">No. Of Visitors:</h3>
+            <div id="sfcrse7usqx8h768h6p2w6t516qltergslt"></div>
+            <script type="text/javascript" src="https://counter3.stat.ovh/private/counter.js?c=rse7usqx8h768h6p2w6t516qltergslt&down=async" async></script>
+            <noscript><a href="https://www.freecounterstat.com" title="web page counter"><img src="https://counter3.stat.ovh/private/freecounterstat.php?c=rse7usqx8h768h6p2w6t516qltergslt" border="0" title="web page counter" alt="web page counter"></a></noscript>
+            <!-- freecounterstat Code ENDS -->
+            <br><br>
+            <p style="color: white;">Powered By VSCode<br>Copyrights 2020</p>
+        </center>
+       </div>
+        <script>
+            myShow = w3.slideshow("#pictures", 0);
+        </script>                         
+    </body>
+</html>
